@@ -7,7 +7,7 @@
     --color2: #32ADE6;
     --color3: #111111;
     --color4: #ffffff;
-    --color5: #78788032;
+    --color5: #78788016;
     --color6: #787880;
 }
 
@@ -22,14 +22,20 @@
 }
 
 body {
+    background-color: var(--color5);
     height: 100vh;
 }
 
 /* title */
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 700;
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* nav top conficuration */
@@ -42,8 +48,44 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4em;
+    height: 3.5em;
     margin: 0 1.25em;
+}
+
+.user, .settings, .help {
+    border-bottom: 1px solid var(--color5);
+}
+
+.user, .settings, .help, .exit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5em;
+    padding: 0 1.25em;
+}
+
+.float-menu {
+    font-size: .875em;
+    font-weight: 400;
+    background-color: var(--color4);
+    box-shadow: var(--color5) 0px 2px 6px;
+    border-radius: .25em;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 3.5em;
+    right: 1.25em;
+    width: 20em;
+}
+
+.user-text-icon, .settings-text-icon, .help-text-icon, .exit-text-icon {
+    color: var(--color3);
+    font-size: 1em;
+}
+
+.user-icon, .settings-icon, .help-icon, .exit-icon {
+    fill: var(--color3);
 }
 
 /* list view text configuration */
@@ -123,28 +165,46 @@ h1 {
 
 /* nav botton conficuration */
 
+.icon-text {
+    font-size: .75em;
+    color: var(--color6);
+}
+
 .botton {
     border-top: 1px solid var(--color5);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 .botton-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 4em;
+    height: 3.5em;
     margin: 0 1.25em;
-    position: inherit;
 }
 
 .menu-icon {
     fill: var(--color6);
 }
 
-.menu-icon:hover {
-    fill: var(--color1);
+.stocks-icon, .watchlist-icon, .search-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .25em;
 }
 
 /* search configuration */
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    margin: 1.25em;
+}
 
 .search-box {
     display: flex;
@@ -152,7 +212,6 @@ h1 {
     background-color: var(--color5);
     height: 2.5em;
     border-radius: 1.25rem;
-    margin: 1.25em;
     padding-left: 1em;
 }
 
