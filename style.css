@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color1: #007AFF;
+    --color2: #32ADE6;
+    --color3: #111111;
+    --color4: #ffffff;
+    --color5: #78788032;
+    --color6: #787880;
+}
+
+/* global configuration */
+
+* { 
+    font-family: 'Inter', sans-serif, Arial;
+    color: var(--color3);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+}
+
+/* title */
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* nav top conficuration */
+
+.top {
+    border-bottom: 1px solid var(--color5);
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    margin: 0 1.25em;
+}
+
+/* list view text configuration */
+
+.price{
+    font-size: .75em;
+    font-weight: 500;
+}
+
+.variation {
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.company {
+    font-size: .875em;
+    font-weight: 400;
+}
+
+.fair-price {
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.ticker {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* list view configuration */
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    margin: 1.25em;
+}
+
+.stock-logo {
+    display: flex;
+    align-items: center;
+    width: 2.25em;
+    height: 2.25em;
+}
+
+.stock-list {
+    display: flex;
+    align-items: center;
+    gap: 1.25em;
+    height: 3.5em;
+}
+
+.stock-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .25em;
+    height: 3.5em;
+}
+
+.right-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .25em;
+    height: 3.5em;
+}
+
+/* nav botton conficuration */
+
+.botton {
+    border-top: 1px solid var(--color5);
+}
+
+.botton-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4em;
+    margin: 0 1.25em;
+    position: inherit;
+}
+
+.menu-icon {
+    fill: var(--color6);
+}
+
+.menu-icon:hover {
+    fill: var(--color1);
+}
+
+/* search configuration */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--color5);
+    height: 2.5em;
+    border-radius: 1.25rem;
+    margin: 1.25em;
+    padding-left: 1em;
+}
+
+.search-box-icon {
+    fill: var(--color6);
+}
