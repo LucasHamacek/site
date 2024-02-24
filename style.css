@@ -54,7 +54,7 @@ h3 {
 }
 
 .top {
-    border-bottom: 1px solid var(--color5);
+    box-shadow: 0px .33px #00000030;
 }
 
 .top-menu {
@@ -193,10 +193,10 @@ h3 {
 }
 
 .botton {
-    border-top: 1px solid var(--color5);
     position: fixed;
     bottom: 0;
     width: 100vw;
+    box-shadow: 0px -.33px #00000030;
 }
 
 .botton-menu {
@@ -224,7 +224,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    margin: 1.25rem;
+    margin: 1rem;
 }
 
 .search-box {
@@ -234,9 +234,9 @@ h3 {
     background-color: var(--color4);
     height: 2.25em;
     border-radius: 1.125rem;
-    border: 1px solid var(--color5);
     padding-left: 1rem;
-    box-shadow: var(--color5) 1px 2px 6px;
+    box-shadow: 0px 0px 0px 1px #00000004;
+    box-shadow: 0px 3px 8px #00000015;
 }
 
 .search-box-icon {
@@ -248,16 +248,14 @@ h3 {
     align-items: center;
     justify-content: center;
     background-color: var(--color4);
-    box-shadow: var(--color5) 1px 2px 6px;
+    box-shadow: 0px 0px 0px 1px #00000004;
+    box-shadow: 0px 3px 8px #00000015;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 1.125rem;
-    border: 1px solid var(--color5);
 }
 
 .b1 {
-    position: fixed;
-    bottom: 6.25rem;
     background-color: var(--color1);
     padding: .875rem 1.25rem;
     border: none;
@@ -282,4 +280,18 @@ h3 {
     display: flex;
     padding-left: 1rem;
     gap: 1rem;
+}
+
+.nb-2 {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.nb-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
 }
