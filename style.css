@@ -8,44 +8,143 @@
     --color3: #111111;
     --color4: #ffffff;
     --color5: #78788012;
-    --color6: #787880;
+    --color6: #999999;
 }
 
 /* global configuration */
 
 * { 
     font-family: 'Inter', sans-serif, Arial;
-    color: var(--color3);
     text-decoration: none;
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: var(--color4);
     height: 100vh;
 }
 
 /* title */
 
 h1 {
-    color: var(--color3);
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.75rem;
 }
 
 h2 {
-    color: var(--color4);
-    font-size: 1.063rem;
-    font-weight: 500;
+    font-size: 1.375rem;
 }
 
 h3 {
+    font-size: 1.25rem;
+}
+
+/* text */
+
+.bo {
+    font-size: 1.063rem;
+}
+
+.co {
+    font-size: 1rem;
+}
+
+.sh {
+    font-size: 0.938rem;
+}
+
+.fn {
+    font-size: 0.813rem;
+}
+
+.cp {
+    font-size: 0.625rem;
+}
+
+/* text color */
+
+.c1 {
+    color: var(--color1);
+}
+
+.c2 {
+    color: var(--color2);
+}
+
+.c3 {
     color: var(--color3);
-    font-size: .938rem;
+}
+
+.c4 {
+    color: var(--color4);
+}
+
+.c5 {
+    color: var(--color5);
+}
+
+.c6 {
+    color: var(--color6);
+}
+
+/* font weight */
+
+.lg {
+    font-weight: 300;
+}
+
+.re {
+    font-weight: 400;
+}
+
+.me {
     font-weight: 500;
 }
 
+.sb {
+    font-weight: 600;
+}
+
+/* button */
+
+.bt1 {
+    background-color: var(--color1);
+    padding: .875rem 1.25rem;
+    white-space: nowrap;
+    border: none;
+    border-radius: 2.5rem;
+}
+
+.bt2 {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--color5);
+    padding: .438rem .875rem;
+    white-space: nowrap;
+    border: none;
+    border-radius: 1.25rem;
+}
+
+.bt3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color4);
+    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 1.125rem;
+}
+
+/* svg */
+
+.sc3 {
+    fill: var(--color3);
+}
+
+.sc6 {
+    fill: var(--color6);
+}
 
 /* nav top conficuration */
 
@@ -107,33 +206,6 @@ h3 {
 
 .user-icon, .settings-icon, .help-icon, .exit-icon {
     fill: var(--color3);
-}
-
-/* list view text configuration */
-
-.price{
-    font-size: .75rem;
-    font-weight: 500;
-}
-
-.variation {
-    font-size: .75rem;
-    font-weight: 400;
-}
-
-.company {
-    font-size: .875rem;
-    font-weight: 400;
-}
-
-.fair-price {
-    font-size: .875rem;
-    font-weight: 600;
-}
-
-.ticker {
-    font-size: 1rem;
-    font-weight: 600;
 }
 
 /* list view configuration */
@@ -232,11 +304,10 @@ h3 {
     align-items: center;
     flex-grow: 1;
     background-color: var(--color4);
-    height: 2.25em;
-    border-radius: 1.125rem;
+    height: 3.125em;
+    border-radius: 1.563rem;
     padding-left: 1rem;
-    box-shadow: 0px 0px 0px 1px #00000004;
-    box-shadow: 0px 3px 8px #00000015;
+    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
 }
 
 .search-box-icon {
@@ -248,27 +319,13 @@ h3 {
     align-items: center;
     justify-content: center;
     background-color: var(--color4);
-    box-shadow: 0px 0px 0px 1px #00000004;
-    box-shadow: 0px 3px 8px #00000015;
+    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 1.125rem;
 }
 
-.b1 {
-    background-color: var(--color1);
-    padding: .875rem 1.25rem;
-    border: none;
-    border-radius: 2.5rem;
-}
 
-.b2 {
-    background-color: var(--color5);
-    padding: .438rem .875rem;
-    white-space: nowrap;
-    border: none;
-    border-radius: 1.25rem;
-}
 
 .center {
     display: flex;
@@ -278,6 +335,7 @@ h3 {
 
 .filter {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 1rem;
     gap: 1rem;
 }
