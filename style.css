@@ -104,6 +104,125 @@ h3 {
     font-weight: 600;
 }
 
+/* svg color */
+
+.sc3 {
+    fill: var(--color3);
+}
+
+.sc6 {
+    fill: var(--color6);
+}
+
+/* svg size */
+
+.sz1 {
+    width: 1rem;
+    height: 1rem;
+}
+
+.sz2 {
+    width: 1.375rem;
+    height: 1.375rem;
+}
+
+.sz3 {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+/* flexbox */
+
+.df {
+    display: flex;
+}
+
+.fdr {
+    flex-direction: row;
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+.jce {
+    justify-content: end;
+}
+
+.aic {
+    align-items: center;
+}
+
+.aie {
+    align-items: end;
+}
+
+.ais{
+    align-items: start;
+}
+
+.fw {
+    flex-wrap: wrap;
+}
+
+.fg {
+    flex-grow: 1;
+}
+
+/* other */
+
+.gp1 {
+    gap: .25rem;
+}
+
+.gp2 {
+    gap: 1rem;
+}
+
+.pd {
+    padding: 1rem;
+}
+
+.pdt {
+    padding-top: .813rem;
+}
+
+.pdb {
+    padding-bottom: .813rem;
+}
+
+.hd {
+    display: none;
+}
+
+.bs1 {
+    box-shadow: 0px -.33px #00000030;
+}
+
+.psf {
+    position: fixed;
+}
+
+.bot {
+    bottom: 0;
+}
+
+.vw {
+    width: 100vw;
+}
+
 /* button */
 
 .bt1 {
@@ -129,6 +248,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     background-color: var(--color4);
     box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
     width: 2.25rem;
@@ -136,170 +256,12 @@ h3 {
     border-radius: 1.125rem;
 }
 
-/* svg */
-
-.sc3 {
-    fill: var(--color3);
+.bt4 {
+    background: none;
+    border: none;
 }
 
-.sc6 {
-    fill: var(--color6);
-}
-
-/* nav top conficuration */
-
-.menu-title {
-
-}
-
-.top {
-    box-shadow: 0px .33px #00000030;
-}
-
-.top-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 2.875rem;
-    margin: 0 1rem;
-}
-
-.submenu-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.25rem;
-    margin: 0 1rem;
-}
-
-.user, .settings, .help {
-    border-bottom: 1px solid var(--color5);
-}
-
-.user, .settings, .help, .exit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.5rem;
-    padding: 0 1rem;
-}
-
-.float-menu {
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: var(--color4);
-    box-shadow: var(--color5) 1px 2px 6px;
-    border-radius: .5rem;
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 3.5rem;
-    right: 1rem;
-    width: 16rem;
-}
-
-.user-text-icon, .settings-text-icon, .help-text-icon, .exit-text-icon {
-    color: var(--color3);
-    font-size: 1em;
-}
-
-.user-icon, .settings-icon, .help-icon, .exit-icon {
-    fill: var(--color3);
-}
-
-/* list view configuration */
-
-.list-view {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 2rem 1rem;
-}
-
-.stock-logo {
-    display: flex;
-    align-items: center;
-    width: 2.25rem;
-    height: 2.25rem;
-}
-
-.stock-list {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    height: 3.5rem;
-}
-
-.stock-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.left-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: .25rem;
-    height: 3.5rem;
-}
-
-.right-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    gap: .25rem;
-    height: 3.5rem;
-}
-
-/* nav botton configuration */
-
-.icon-text {
-    font-size: .625rem;
-    font-weight: 500;
-    color: var(--color6);
-}
-
-.botton {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    box-shadow: 0px -.33px #00000030;
-}
-
-.botton-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 3.5rem;
-}
-
-.menu-icon {
-    fill: var(--color6);
-}
-
-.stocks-icon, .watchlist-icon, .search-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .375rem;
-}
-
-/* search configuration */
-
-.search {
-    display: flex;
-    justify-content: space-between;
-    gap: 1em;
-    margin: 1rem;
-}
-
-.search-box {
+.bt5 {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -307,49 +269,5 @@ h3 {
     height: 3.125em;
     border-radius: 1.563rem;
     padding-left: 1rem;
-    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
-}
-
-.search-box-icon {
-    fill: var(--color6);
-}
-
-.border-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color4);
-    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 1.125rem;
-}
-
-
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.filter {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 1rem;
-    gap: 1rem;
-}
-
-.nb-2 {
-    display: flex;
-    justify-content: right;
-    gap: 1rem;
-    margin: 1rem;
-}
-
-.nb-3 {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 1rem;
+    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006; 
 }
