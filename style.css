@@ -15,7 +15,7 @@
 
 /* global configuration */
 
-* { 
+* {
     font-family: 'Inter', sans-serif, Arial;
     text-decoration: none;
     margin: 0px;
@@ -116,7 +116,7 @@ h3 {
 
 /* svg */
 
-.st{
+.st {
     stroke: var(--color3);
     stroke-width: 0.5;
 }
@@ -192,7 +192,7 @@ h3 {
     align-items: end;
 }
 
-.ais{
+.ais {
     align-items: start;
 }
 
@@ -306,7 +306,7 @@ h3 {
 
 .bt2:focus {
     color: var(--color1);
-    outline: .125rem solid var(--color1)
+    outline: .1rem solid var(--color1)
 }
 
 .bt3 {
@@ -335,7 +335,7 @@ h3 {
     height: 3.125em;
     border-radius: 1.563rem;
     padding: 0 .375rem 0 1rem;
-    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006; 
+    box-shadow: 0px 0px 0px 1px #00000004, 0px 3px 8px #00000015, 0px 3px 1px #00000006;
 }
 
 .bgc5 {
