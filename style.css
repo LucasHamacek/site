@@ -293,6 +293,7 @@ h3 {
 }
 
 .bt2 {
+    color: var(--color3);
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -301,6 +302,11 @@ h3 {
     white-space: nowrap;
     border: none;
     border-radius: 1.25rem;
+}
+
+.bt2:focus {
+    color: var(--color1);
+    outline: .125rem solid var(--color1)
 }
 
 .bt3 {
@@ -336,6 +342,10 @@ h3 {
     background-color: var(--color5);
 }
 
+.bgc4 {
+    background-color: var(--color4);
+}
+
 /* webkit */
 
 ::-webkit-search-cancel-button {
@@ -344,4 +354,20 @@ h3 {
 
 ::-webkit-input-placeholder {
     color: var(--color6);
+}
+
+.zi {
+    z-index: 1;
+}
+
+.bf {
+    color: var(--color6);
+    fill: var(--color6);
+    background: none;
+    border: none;
+}
+
+.bf:focus {
+    color: var(--color1);
+    fill: var(--color1);
 }
