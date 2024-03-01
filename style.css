@@ -258,6 +258,10 @@ h3 {
     position: fixed;
 }
 
+.psr {
+    position: relative;
+}
+
 .bot {
     bottom: 0;
 }
@@ -268,6 +272,14 @@ h3 {
 
 .rnd {
     border-radius: 100%;
+}
+
+.br1 {
+    border-radius: .625rem;
+}
+
+.brt {
+    border-radius: .625rem .625rem 0 0;
 }
 
 .bn {
