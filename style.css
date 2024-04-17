@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Roca';
+    src: url(font/Roca\ Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: #ffe01b;
+    --color2: #183642;
+    --color3: #303A2B;
+    --color4: #F6F6F4;
+    --color5: #ffffff;
+    --color6: #111111;
+    --color7: #18364290;
+}
+
+/* global configuration */
+
+* {
+    color: var(--color6);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* font family*/
+
+.ff1 {
+    font-family: 'Roca', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.ff2 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+/* font weight*/
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+/* font color*/
+
+.fc1 {
+    color: var(--color5);
+}
+
+/* font size*/
+
+.fs1 {
+    font-size: 2.75rem;
+}
+
+.fs2 {
+    font-size: 2.125rem;
+}
+
+.fs3 {
+    font-size: 1.125rem;
+}
+
+.fs4 {
+    font-size: 1rem;
+}
+
+.fs5 {
+    font-size: 0.8125rem;
+}
+
+.fs6 {
+    font-size: 0.6875rem;
+}
+
+/* line height*/
+
+.lh1 {
+    line-height: 1;
+}
+
+/* flexbox */
+
+.df {
+    display: flex;
+}
+
+.fdc {
+    flex-direction: column;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.tac {
+    text-align: center;
+}
+
+.gp1 {
+    gap: .5rem;
+}
+
+.gp2 {
+    gap: 1rem;
+}
+
+.tac {
+    text-align: center;
+}
+
+/* spacing */
+
+.sp1 {
+    padding: 1rem;
+}
+
+.sp2 {
+    padding: 1.5rem;
+}
+
+.sp3 {
+    padding: 2rem;
+}
+
+.sp4 {
+    padding: 3rem;
+}
+
+/* background color */
+
+.bgc1 {
+    background-color: var(--color1);
+}
+
+.bgc2 {
+    background-color: var(--color2);
+}
+
+.bgc3 {
+    background-color: var(--color3);
+}
+
+.bgc4 {
+    background-color: var(--color4);
+}
+
+.bgc5 {
+    background-color: var(--color5);
+}
+
+.bgc7 {
+    background-color: var(--color7);
+}
+
+/* size */
+
+.w1 {
+    width: 12rem;
+}
+
+.maw {
+    max-width: 85vw;
+}
+
+.miw {
+    min-width: ;
+}
+
+/* button */
+
+.btn1 {
+    background-color: var(--color1);
+    padding: .875rem 1.25rem;
+    border: solid 1px var(--color3);
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    box-shadow: 0rem .225rem var(--color6);
+    transition: 250ms;
+}
+
+summary {
+    padding: .0rem 0rem .5rem 0rem;
+}
