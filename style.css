@@ -124,6 +124,8 @@ p {
     text-align: center;
 }
 
+/* spacing */
+
 .gp1 {
     gap: .5rem;
 }
@@ -135,12 +137,6 @@ p {
 .gp3 {
     gap: 2rem;
 }
-
-.tac {
-    text-align: center;
-}
-
-/* spacing */
 
 .sp1 {
     padding: 1rem;
@@ -190,15 +186,15 @@ p {
     width: 12rem;
 }
 
-.maw {
-    max-width: 85vw;
+.maw1 {
+    max-width: 100vw;
 }
 
-.miw {
-    min-width: ;
+.miw1 {
+    min-width: 85vw;
 }
 
-/* button */
+/* components */
 
 .btn1 {
     background-color: var(--color1);
@@ -213,8 +209,25 @@ p {
     transition: 250ms;
 }
 
+details {
+    padding: 1rem 0rem;
+    border-bottom: solid 1px rgb(117, 117, 117);
+}
+
 summary {
-    padding: .0rem 0rem .5rem 0rem;
+    padding: 1rem 0rem;
+    display: block;
+    cursor: pointer;; 
+}
+
+summary:after {
+    content: url(chevron-down.svg); 
+    float: right;
+    margin-left: 2rem;
+}
+
+details[open] summary:after {
+    content: url(chevron-up.svg);
 }
 
 a {
@@ -240,7 +253,9 @@ a:hover {
 
 ul > li {
     padding: 1rem 0rem;
-    list-style-image: url(check-lg.svg);
+    list-style-image: url(check.svg);
     align-items: center;
     border-bottom: solid 1px rgb(117, 117, 117);
 }
+
+
