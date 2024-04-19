@@ -108,20 +108,52 @@ p {
     display: flex;
 }
 
-.fdc {
+.fd {
     flex-direction: column;
 }
 
-.aic {
+.fd1 {
+    flex-direction: column;
+}
+
+.fd2 {
+    flex-direction: column;
+}
+
+.fd3 {
+    flex-direction: column;
+}
+
+.fw {
+    flex-wrap: wrap;
+}
+
+.ai {
     align-items: center;
 }
 
-.jcc {
+.ai1 {
+    align-items: center;
+}
+
+.aims {
+    align-items: center;
+}
+
+.jc {
     justify-content: center;
 }
 
-.tac {
+.ta {
     text-align: center;
+}
+
+.tams {
+    text-align: center;
+}
+
+.fg {
+    flex-grow: 1;
 }
 
 /* spacing */
@@ -186,12 +218,32 @@ p {
     width: 12rem;
 }
 
-.maw1 {
+.mw {
     max-width: 100vw;
 }
 
-.miw1 {
-    min-width: 85vw;
+.mw2 {
+    max-width: 13.5rem;
+}
+
+.mw3 {
+    max-width: 37.5rem;
+}
+
+.mw4 {
+    max-width: 37.5rem;
+}
+
+.mw5 {
+    max-width: 25rem;
+}
+
+.mw6 {
+    max-width: 34rem;
+}
+
+.imw {
+    max-width: 32rem;
 }
 
 /* components */
@@ -245,10 +297,7 @@ a:hover {
     flex-direction: column;
     gap: 0.5rem;
     border: solid 1px rgb(117, 117, 117);
-    margin-left: auto;
-    margin-right: auto;
     padding: 2rem;
-    max-width: 25rem;
 }
 
 ul > li {
@@ -258,4 +307,38 @@ ul > li {
     border-bottom: solid 1px rgb(117, 117, 117);
 }
 
+@media only screen and (min-width: 600px) {
 
+    .fd2 {
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .fd3 {
+        flex-direction: row;
+    }
+
+    .mw4 {
+        max-width: 32rem;
+    }
+
+    .mw3 {
+        max-width: 64rem;
+    }
+
+    .ai1 {
+        align-items: start;
+    }
+
+}
