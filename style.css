@@ -257,6 +257,7 @@ p {
 }
 
 .btn1:hover {
+    transform: translateY(-4px);
     box-shadow: 0rem .225rem var(--color6);
     transition: 250ms;
 }
