@@ -190,6 +190,10 @@ p {
     margin: 1.5rem;
 }
 
+.sp6 {
+    margin: auto 0;
+}
+
 /* background color */
 
 .bgc1 {
@@ -307,8 +311,6 @@ a:hover {
 
 ul > li {
     padding: 1rem 0rem;
-    list-style-image: url(check.svg);
-    align-items: center;
     border-bottom: solid 1px rgb(117, 117, 117);
 }
 
@@ -346,4 +348,8 @@ ul > li {
         align-items: start;
     }
 
+}
+
+.va {
+    vertical-align: middle;
 }
