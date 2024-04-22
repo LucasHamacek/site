@@ -175,7 +175,7 @@ p {
 }
 
 .sp2 {
-    padding: 1.5rem;
+    padding: 3.5rem 1.5rem;
 }
 
 .sp3 {
@@ -184,6 +184,10 @@ p {
 
 .sp4 {
     padding: 3rem;
+}
+
+.sp5 {
+    margin: 1.5rem;
 }
 
 /* background color */
@@ -219,7 +223,7 @@ p {
 }
 
 .mw {
-    max-width: 100vw;
+    max-width: 85vw;
 }
 
 .mw2 {
