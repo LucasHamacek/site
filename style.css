@@ -50,6 +50,10 @@ p {
     font-weight: 300;
 }
 
+.fw500 {
+    font-weight: 500;
+}
+
 .fw600 {
     font-weight: 600;
 }
@@ -348,8 +352,4 @@ ul > li {
         align-items: start;
     }
 
-}
-
-.va {
-    vertical-align: middle;
 }
