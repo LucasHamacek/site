@@ -20,6 +20,7 @@
 /* global configuration */
 
 * {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--color6);
     text-decoration: none;
     margin: 0px;
@@ -198,6 +199,10 @@ p {
     margin: auto 0;
 }
 
+.sp7 {
+    margin: 0 0 1rem 0;
+}
+
 /* background color */
 
 .bgc1 {
@@ -275,7 +280,7 @@ p {
 }
 
 details {
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem;
     border-bottom: solid 1px rgb(117, 117, 117);
 }
 
@@ -288,7 +293,10 @@ summary {
 summary:after {
     content: url(chevron-down.svg); 
     float: right;
-    margin-left: 2rem;
+}
+
+details[open] {
+    max-width: 26.5rem;
 }
 
 details[open] summary:after {
