@@ -72,7 +72,7 @@ p {
 }
 
 .fs2 {
-    font-size: 2.125rem;
+    font-size: 2.375rem;
 }
 
 .fs3 {
@@ -203,6 +203,10 @@ p {
     margin: 0 0 1rem 0;
 }
 
+.sp8 {
+    margin-top: 1rem;
+}
+
 /* background color */
 
 .bgc1 {
@@ -240,7 +244,7 @@ p {
 }
 
 .mw2 {
-    max-width: 13.5rem;
+    max-width: 15rem;
 }
 
 .mw3 {
