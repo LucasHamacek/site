@@ -283,21 +283,7 @@ p {
 }
 
 .btn1:hover {
-    transform: translateY(-4px);
-    box-shadow: 0rem .225rem var(--color6);
-    transition: 250ms;
-}
-
-.btn2 {
-    background-color: var(--color5);
-    padding: .875rem 1.25rem;
-    border: solid 1px var(--color3);
-    border-radius: 2.5rem;
-    cursor: pointer;
-}
-
-.btn2:hover {
-    transform: translateY(-4px);
+    transform: translateY(-.450rem);
     box-shadow: 0rem .225rem var(--color6);
     transition: 250ms;
 }
