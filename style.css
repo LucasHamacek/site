@@ -8,13 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --color1: #ffe01b;
-    --color2: #183642;
+    --color1: #ffb703;
+    --color2: #023047;
     --color3: #171717;
     --color4: #F6F6F4;
     --color5: #ffffff;
     --color6: #111111;
-    --color7: #18364290;
+    --color7: #fb8500;
+    --color8: #8ecae6;
 }
 
 /* global configuration */
@@ -233,6 +234,10 @@ p {
     background-color: var(--color7);
 }
 
+.bgc8 {
+    background-color: var(--color8);
+}
+
 /* size */
 
 .w1 {
@@ -278,6 +283,20 @@ p {
 }
 
 .btn1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0rem .225rem var(--color6);
+    transition: 250ms;
+}
+
+.btn2 {
+    background-color: var(--color5);
+    padding: .875rem 1.25rem;
+    border: solid 1px var(--color3);
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.btn2:hover {
     transform: translateY(-4px);
     box-shadow: 0rem .225rem var(--color6);
     transition: 250ms;
