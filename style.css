@@ -265,7 +265,11 @@ p {
 }
 
 .mw6 {
-    max-width: 34rem;
+    max-width: 37.5rem;
+}
+
+.mw7 {
+    max-width: 100%;
 }
 
 .imw {
@@ -290,8 +294,9 @@ p {
 }
 
 details {
+    width: auto;
     padding: 0.5rem 0rem;
-    border-bottom: solid 1px rgb(117, 117, 117);
+    border-bottom: solid 1px var(--color3);
 }
 
 summary {
@@ -301,12 +306,13 @@ summary {
 }
 
 summary:after {
+    margin: 0 0 0 1rem;
     content: url(chevron-down.svg); 
     float: right;
 }
 
 details[open] {
-    max-width: 26.5rem;
+    max-width: 27.988rem;
 }
 
 details[open] summary:after {
@@ -343,8 +349,8 @@ ul > li {
 }
 
 .fatia-list-icon {
-    width: 35px;
-    height: 35px;
+    width: 2rem;
+    height: 2rem;
 }
 
 @media only screen and (min-width: 600px) {
