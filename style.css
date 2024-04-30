@@ -11,7 +11,7 @@
     --color1: #ffb703;
     --color2: #023047;
     --color3: #171717;
-    --color4: #F6F6F4;
+    --color4: #F2F2F7;
     --color5: #ffffff;
     --color6: #111111;
     --color7: #fb8500;
@@ -276,16 +276,17 @@ p {
 
 .btn1 {
     background-color: var(--color1);
-    padding: .875rem 1.25rem;
+    padding: .875rem 1.125rem;
     border: solid 1px var(--color3);
-    border-radius: 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0rem .225rem var(--color6);
     cursor: pointer;
 }
 
 .btn1:hover {
-    transform: translateY(-.450rem);
-    box-shadow: 0rem .225rem var(--color6);
+    transform: translateY(.450rem);
     transition: 250ms;
+    box-shadow: none;
 }
 
 details {
@@ -312,9 +313,14 @@ details[open] summary:after {
     content: url(chevron-up.svg);
 }
 
+svg {
+    fill: currentColor;
+    color: var(--color7);
+}
+
 a {
     color: var(--color5);
-    text-decoration: underline dashed;
+    text-decoration: underline dotted;
     text-underline-position: under;
 }
 
@@ -325,6 +331,7 @@ a:hover {
 .box {
     display: flex;
     flex-direction: column;
+    border-radius: 1rem;
     gap: 0.5rem;
     border: solid 1px rgb(117, 117, 117);
     padding: 2rem;
