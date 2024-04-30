@@ -284,7 +284,7 @@ p {
 }
 
 .btn1:hover {
-    transform: translateY(.450rem);
+    transform: translateY(.225rem);
     transition: 250ms;
     box-shadow: none;
 }
