@@ -22,7 +22,7 @@
 
 * {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: var(--color6);
+    color: var(--color3);
     text-decoration: none;
     margin: 0px;
     padding: 0px;
@@ -97,6 +97,10 @@
 
 .fs8 {
     font-size: 0.875rem;
+}
+
+.fs9 {
+    font-size: 2.125rem;
 }
 
 /* text decoration*/
@@ -272,7 +276,7 @@
 }
 
 .mw7 {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .imw {
@@ -282,6 +286,7 @@
 /* components */
 
 .btn1 {
+    font-size: 0.75rem;
     background-color: var(--color1);
     padding: .875rem 1.375rem;
     border: solid 1px var(--color3);
@@ -369,11 +374,15 @@ ul > li {
 }
 
 @media only screen and (min-width: 768px) {
-
+    .mw7{
+        max-width: 80%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-
+    .mw7{
+        max-width: 70%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
