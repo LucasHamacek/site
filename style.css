@@ -66,6 +66,14 @@
 
 /* font color*/
 
+.fc1 {
+    color: var(--color1);
+}
+
+.fc2 {
+    color: var(--color2);
+}
+
 .fc5 {
     color: var(--color5);
 }
@@ -286,6 +294,10 @@
 
 .mw7 {
     max-width: 95%;
+}
+
+.mw8 {
+    max-width: 32rem;
 }
 
 .imw {
