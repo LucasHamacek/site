@@ -383,6 +383,10 @@ ul > li {
     height: 2rem;
 }
 
+.ifs {
+    width: 8rem;
+}
+
 @media only screen and (min-width: 600px) {
 
     .fd2 {
