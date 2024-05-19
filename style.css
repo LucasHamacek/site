@@ -370,14 +370,10 @@ body {
 }
 
 .btn2 {
+    outline: none;
     border: none;
     background-color: unset;
     height: 2rem;
-}
-
-.btn2:active {
-    border: none;
-    background-color: unset;
 }
 
 .btn3 {
