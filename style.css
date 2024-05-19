@@ -21,6 +21,7 @@
     --color6: #111111;
     --color7: #fb8500;
     --color8: #8ecae6;
+    --color9: #17171740;
 }
 
 /* global configuration */
@@ -32,6 +33,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 /* font family*/
@@ -169,8 +175,16 @@
     align-items: center;
 }
 
+.ai2 {
+    align-items: end;
+}
+
 .jc {
     justify-content: center;
+}
+
+.jc1 {
+    justify-content: end;
 }
 
 .ta {
@@ -235,6 +249,14 @@
     margin-top: 1rem;
 }
 
+.sp9 {
+    padding: 0 1rem;
+}
+
+.sp10 {
+    margin: 0.25rem 0 0 0;
+}
+
 /* background color */
 
 .bgc1 {
@@ -269,6 +291,18 @@
 
 .w1 {
     width: 12rem;
+}
+
+.w2 {
+    width: 100%;
+}
+
+.w3 {
+    width: 20%;
+}
+
+.h1 {
+    height: 2.5rem;
 }
 
 .mw {
@@ -330,6 +364,30 @@
 }
 
 .btn1:hover {
+    transform: translateY(.25rem);
+    transition: 250ms;
+    box-shadow: none;
+}
+
+.btn2 {
+    border: none;
+    background-color: transparent;
+    height: 2rem;
+}
+
+.btn3 {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    background-color: var(--color1);
+    padding: .875rem 1.375rem;
+    border: solid 1px var(--color3);
+    border-radius: 2rem;
+    box-shadow: 0rem .25rem var(--color3);
+    cursor: pointer;
+}
+
+.btn3:hover {
     transform: translateY(.25rem);
     transition: 250ms;
     box-shadow: none;
@@ -401,6 +459,23 @@ ul > li {
 .b {
     border: solid 1px var(--color3);
     border-radius: 50%;
+}
+
+dialog::backdrop {
+    background-color: var(--color9);
+    backdrop-filter: blur(0.25rem);
+}
+
+dialog {
+    background-color: var(--color1);
+    margin: auto;
+    border: none;
+    border-radius: 1rem;
+}
+
+.tar {
+    border-radius: 1.25rem;
+    border: solid 1px var(--color6);
 }
 
 @media only screen and (min-width: 600px) {
