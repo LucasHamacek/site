@@ -342,7 +342,7 @@ body {
 }
 
 .imw {
-    max-width: 32rem;
+    max-width: 37.5rem;
 }
 
 .mh1 {
@@ -468,9 +468,7 @@ dialog::backdrop {
 
 dialog {
     background-color: var(--color1);
-    margin: auto;
     border: none;
-    border-radius: 1rem;
 }
 
 .tar {
@@ -485,6 +483,16 @@ dialog {
     }
     .mw9 {
         max-width: 32rem;
+    }
+
+    .imw {
+        max-width: 32rem;
+    }
+
+    dialog {
+        background-color: var(--color1);
+        margin: auto;
+        border: none;
     }
 
 }
