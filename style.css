@@ -371,8 +371,13 @@ body {
 
 .btn2 {
     border: none;
-    background-color: transparent;
+    background-color: unset;
     height: 2rem;
+}
+
+.btn2:active {
+    border: none;
+    background-color: unset;
 }
 
 .btn3 {
