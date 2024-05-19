@@ -443,9 +443,13 @@ details[open] summary:after {
     padding: 2rem;
 }
 
-ul > li {
+.pf > li {
     padding: 1rem 0rem;
     border-bottom: solid 1px rgb(117, 117, 117);
+}
+
+li {
+    list-style-position: inside;
 }
 
 .fatia-list-icon {
