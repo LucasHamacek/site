@@ -147,36 +147,20 @@ body {
     flex-direction: column;
 }
 
-.fd1 {
-    flex-direction: column;
-}
-
-.fd2 {
-    flex-direction: column;
-}
-
-.fd3 {
-    flex-direction: column;
-}
-
 .fw {
     flex-wrap: wrap;
+}
+
+.fg {
+    flex-grow: 1;
 }
 
 .ai {
     align-items: center;
 }
 
-.ai1 {
-    align-items: center;
-}
-
-.aims {
-    align-items: center;
-}
-
-.ai2 {
-    align-items: end;
+.ais {
+    align-items: start;
 }
 
 .jc {
@@ -189,14 +173,6 @@ body {
 
 .ta {
     text-align: center;
-}
-
-.tams {
-    text-align: center;
-}
-
-.fg {
-    flex-grow: 1;
 }
 
 /* spacing */
@@ -238,7 +214,7 @@ body {
 }
 
 .sp6 {
-    margin: auto 0;
+    margin: auto;
 }
 
 .sp7 {
@@ -301,8 +277,19 @@ body {
     width: 20%;
 }
 
+.w4 {
+    width: 30rem;
+}
+
+.w5 {
+    width: 64rem;
+}
+
 .h1 {
     height: 2.5rem;
+}
+.h2 {
+    height: 100%;
 }
 
 .mw {
@@ -317,20 +304,12 @@ body {
     max-width: 37.5rem;
 }
 
-.mw4 {
-    max-width: 37.5rem;
-}
-
 .mw5 {
     max-width: 25rem;
 }
 
 .mw6 {
     max-width: 37.5rem;
-}
-
-.mw7 {
-    max-width: 95%;
 }
 
 .mw8 {
@@ -341,12 +320,30 @@ body {
     max-width: 28rem;
 }
 
+.mw10 {
+    width: 32rem;
+}
+
+.mw12 {
+    min-width: 25rem;
+    max-width: 30rem;
+}
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+}
+
 .imw {
-    max-width: 37.5rem;
+    max-width: 100%;
 }
 
 .mh1 {
-    min-height: 100vh;
+    height: 100vh;
+}
+
+.wt {
+    width: 32rem;
 }
 
 /* components */
@@ -410,11 +407,7 @@ summary:after {
     margin: 0 0 0 1rem;
     content: url(chevron-down.svg); 
     float: right;
-}
-
-details[open] {
-    max-width: 27.988rem;
-}
+} 
 
 details[open] summary:after {
     content: url(chevron-up.svg);
@@ -437,6 +430,7 @@ details[open] summary:after {
 .box {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     border-radius: 1rem;
     gap: 0.5rem;
     border: solid 1px rgb(117, 117, 117);
@@ -450,6 +444,10 @@ details[open] summary:after {
 
 li {
     list-style-position: inside;
+}
+
+.sub li {
+    list-style-type: lower-alpha;
 }
 
 .fatia-list-icon {
@@ -483,14 +481,7 @@ dialog {
 
 @media only screen and (min-width: 600px) {
 
-    .fd2 {
-        flex-direction: row;
-    }
     .mw9 {
-        max-width: 32rem;
-    }
-
-    .imw {
         max-width: 32rem;
     }
 
@@ -500,36 +491,32 @@ dialog {
         border: none;
     }
 
+    .sp11 {
+        padding: 0 2rem;
+    }
+
+    .imw {
+        max-width: 30rem;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    .mw7{
-        max-width: 80%;
-    }
+    
 }
 
 @media only screen and (min-width: 992px) {
-    .mw7{
-        max-width: 70%;
-    }
+
 }
 
 @media only screen and (min-width: 1200px) {
-
-    .fd3 {
-        flex-direction: row;
-    }
-
-    .mw4 {
-        max-width: 32rem;
-    }
 
     .mw3 {
         max-width: 64rem;
     }
 
-    .ai1 {
-        align-items: start;
+    .mw10 {
+        width: 64rem;
     }
 
 }

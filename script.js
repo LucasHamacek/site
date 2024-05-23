@@ -3,7 +3,7 @@ const buttonClose = document.querySelector("dialog button")
 
 setTimeout(function() {
     minhaModal.showModal();
-}, 3000);
+}, 10000);
 
 buttonClose.onclick = function () {
    minhaModal.close()
