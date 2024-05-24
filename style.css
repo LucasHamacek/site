@@ -448,6 +448,11 @@ li {
     list-style-position: inside;
 }
 
+ul {
+    list-style: disc;
+    padding-left: 1rem;
+}
+
 .sub li {
     list-style-type: lower-alpha;
 }
