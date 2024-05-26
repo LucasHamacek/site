@@ -120,6 +120,11 @@ body {
     text-decoration: line-through;
 }
 
+.tdul {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 /* line spacing */
 
 .lh {
