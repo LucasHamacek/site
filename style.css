@@ -40,11 +40,12 @@ body {
     max-height: 100vh;
 }
 
-/* font family*/
+/* font family */
 
 .ff1 {
     font-family: 'Roca', Arial, Helvetica, sans-serif;
     font-weight: normal;
+    letter-spacing: -1px;
 }
 
 .ff2 {
@@ -52,7 +53,7 @@ body {
     font-weight: normal;
 }
 
-/* font weight*/
+/* font weight */
 
 .fw300 {
     font-weight: 300;
@@ -70,7 +71,7 @@ body {
     font-weight: 600;
 }
 
-/* font color*/
+/* font color */
 
 .fc1 {
     color: var(--color1);
@@ -84,18 +85,18 @@ body {
     color: var(--color5);
 }
 
-/* font size*/
+/* font size */
 
 .fs1 {
-    font-size: 2.875rem;
-}
-
-.fs2 {
     font-size: 2.375rem;
 }
 
+.fs2 {
+    font-size: 2.125rem;
+}
+
 .fs3 {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .fs4 {
@@ -110,31 +111,28 @@ body {
     font-size: 0.6875rem;
 }
 
-.fs7 {
-    font-size: 1.75;
-}
-
 .fs8 {
     font-size: 0.875rem;
-}
-
-.fs9 {
-    font-size: 2.125rem;
 }
 
 .fs10 {
     font-size: 3.375rem;
 }
-/* text decoration*/
+
+/* text decoration */
 
 .lt {
     text-decoration: line-through;
 }
 
-/* line height*/
+/* line spacing */
 
-.lh1 {
+.lh {
     line-height: 1;
+}
+
+.ls {
+    letter-spacing: -1px;
 }
 
 /* flexbox */
@@ -151,10 +149,6 @@ body {
     flex-wrap: wrap;
 }
 
-.fg {
-    flex-grow: 1;
-}
-
 .ai {
     align-items: center;
 }
@@ -167,8 +161,8 @@ body {
     justify-content: center;
 }
 
-.jc1 {
-    justify-content: end;
+.jcsb {
+    justify-content: space-between;
 }
 
 .ta {
@@ -189,47 +183,35 @@ body {
     gap: 2rem;
 }
 
-.gp4 {
-    gap: 3rem;
-}
-
-.sp1 {
+.pd1 {
     padding: 1rem;
 }
 
-.sp2 {
+.pd2 {
     padding: 3.5rem 1.5rem;
 }
 
-.sp3 {
+.pd3 {
     padding: 2rem;
 }
 
-.sp4 {
+.pd4 {
     padding: 3rem;
 }
 
-.sp5 {
-    padding: auto 0;
-}
-
-.sp6 {
-    margin: auto;
-}
-
-.sp7 {
-    margin: 0 0 1rem 0;
-}
-
-.sp8 {
-    margin-top: 1rem;
-}
-
-.sp9 {
+.pd5 {
     padding: 0 1.5rem;
 }
 
-.sp10 {
+.mg1 {
+    margin: auto;
+}
+
+.mg2 {
+    margin: 0 0 1rem 0;
+}
+
+.mg3 {
     margin: 0.25rem 0 0 0;
 }
 
@@ -265,24 +247,12 @@ body {
 
 /* size */
 
-.w1 {
-    width: 12rem;
-}
-
 .w2 {
     width: 100%;
 }
 
-.w3 {
-    width: 20%;
-}
-
 .w4 {
     width: 30rem;
-}
-
-.w5 {
-    width: 64rem;
 }
 
 .h1 {
@@ -293,58 +263,21 @@ body {
     min-height: 90vh;
 }
 
-.mw {
-    max-width: 85vw;
+.mw1 {
+    width: 32rem;
 }
 
 .mw2 {
-    max-width: 13.5rem;
+    max-width: 100%;
 }
 
 .mw3 {
     max-width: 37.5rem;
 }
 
-.mw5 {
-    max-width: 25rem;
-}
-
-.mw6 {
-    max-width: 37.5rem;
-}
-
-.mw8 {
-    max-width: 32rem;
-}
-
-.mw9 {
-    max-width: 28rem;
-}
-
-.mw10 {
-    width: 32rem;
-}
-
-.mw12 {
-    min-width: 25rem;
-    max-width: 30rem;
-}
-
 .img1 {
     max-width: 100%;
     height: auto;
-}
-
-.imw {
-    max-width: 100%;
-}
-
-.mh1 {
-    height: 100vh;
-}
-
-.wt {
-    width: 32rem;
 }
 
 /* components */
@@ -432,11 +365,13 @@ details[open] summary:after {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border-radius: 1rem;
+    border-radius: 1px;
     gap: 0.5rem;
-    border: solid 1px rgb(117, 117, 117);
+    border: solid 1px rgb(177, 177, 177);
     padding: 2rem;
     background-color: var(--color5);
+    max-width: 26rem;
+    margin: auto;
 }
 
 .pf > li {
@@ -450,7 +385,6 @@ li {
 
 ul {
     list-style: disc;
-    padding-left: 1rem;
 }
 
 .sub li {
@@ -460,15 +394,6 @@ ul {
 .fatia-list-icon {
     width: 2rem;
     height: 2rem;
-}
-
-.ifs {
-    width: 8rem;
-}
-
-.b {
-    border: solid 1px var(--color3);
-    border-radius: 50%;
 }
 
 dialog::backdrop {
@@ -486,11 +411,9 @@ dialog {
     border: solid 1px var(--color6);
 }
 
-@media only screen and (min-width: 600px) {
+/* media screen */
 
-    .mw9 {
-        max-width: 32rem;
-    }
+@media only screen and (min-width: 600px) {
 
     dialog {
         background-color: var(--color1);
@@ -498,11 +421,7 @@ dialog {
         border: none;
     }
 
-    .sp11 {
-        padding: 0 2rem;
-    }
-
-    .imw {
+    .mw2 {
         max-width: 30rem;
     }
 
@@ -518,11 +437,24 @@ dialog {
 
 @media only screen and (min-width: 1200px) {
 
+    .fs1 {
+        font-size: 2.875rem;
+    }
+
+    .fs2 {
+        font-size: 2.375rem;
+    }
+
+    .fs3 {
+        font-size: 1.125rem;
+    }
+    
+
     .mw3 {
         max-width: 64rem;
     }
 
-    .mw10 {
+    .mw1 {
         width: 64rem;
     }
 
