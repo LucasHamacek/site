@@ -111,12 +111,12 @@ body {
     font-size: 0.6875rem;
 }
 
-.fs8 {
-    font-size: 0.875rem;
+.fs7 {
+    font-size: 1.75rem;
 }
 
-.fs10 {
-    font-size: 3.375rem;
+.fs8 {
+    font-size: 0.875rem;
 }
 
 /* text decoration */
@@ -278,6 +278,13 @@ body {
 .img1 {
     max-width: 100%;
     height: auto;
+}
+
+.img2 {
+    display: flex;
+    max-width: 80%;
+    height: auto;
+    margin: auto;
 }
 
 /* components */
