@@ -1,10 +1,12 @@
-const minhaModal = document.querySelector('#minha-modal')
-const buttonClose = document.querySelector("dialog button")
+var msgCookies = document.getElementById('ck')
 
-setTimeout(function() {
-    minhaModal.showModal();
-}, 10000);
+function continuar(){
+    localStorage.lgpd = "true"
+    msgCookies.classList.remove('show')
+}
 
-buttonClose.onclick = function () {
-   minhaModal.close()
+if(localStorage.lgpd == 'true'){
+    msgCookies.classList.remove('show')
+}else{
+    msgCookies.classList.add('show')
 }
