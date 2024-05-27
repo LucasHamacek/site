@@ -17,6 +17,7 @@
     --color7: #fb8500;
     --color8: #8ecae6;
     --color9: #17171740;
+    --color10: #201717;
 }
 
 /* global configuration */
@@ -245,6 +246,10 @@ body {
     background-color: var(--color8);
 }
 
+.bgc10 {
+    background-color: var(--color10);
+}
+
 /* size */
 
 .w2 {
@@ -295,9 +300,9 @@ body {
     font-size: 0.75rem;
     background-color: var(--color1);
     padding: .875rem 1.375rem;
-    border: solid 1px var(--color3);
+    border: solid 1px var(--color10);
     border-radius: 2rem;
-    box-shadow: 0rem .25rem var(--color3);
+    box-shadow: 0rem .25rem var(--color10);
     cursor: pointer;
 }
 
@@ -320,9 +325,9 @@ body {
     font-size: 0.75rem;
     background-color: var(--color1);
     padding: .875rem 1.375rem;
-    border: solid 1px var(--color3);
+    border: solid 1px var(--color10);
     border-radius: 2rem;
-    box-shadow: 0rem .25rem var(--color3);
+    box-shadow: 0rem .25rem var(--color10);
     cursor: pointer;
 }
 
@@ -338,7 +343,7 @@ body {
     font-size: 0.75rem;
     background-color: var(--color1);
     padding: .875rem 1.375rem;
-    border: solid 1px var(--color3);
+    border: none;
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -438,14 +443,14 @@ dialog {
     position: fixed;
     bottom: 0;
     display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
     width: 100%;
-    background-color: var(--color3);
+    background-color: var(--color10);
     border-top: solid 1px var(--color6);
 }
 
