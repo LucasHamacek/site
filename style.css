@@ -276,10 +276,6 @@ body {
     width: 30rem;
 }
 
-.w5 {
-    width: 30rem;
-}
-
 .h1 {
     height: 2.5rem;
 }
@@ -543,14 +539,6 @@ dialog {
 
     .mw1 {
         width: 64rem;
-    }
-
-}
-
-@media only screen and (min-width: 1055px) {
-
-    .w5 {
-        width: 62rem;
     }
 
 }
