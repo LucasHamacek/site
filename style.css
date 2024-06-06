@@ -284,6 +284,10 @@ body {
     min-height: 100vh;
 }
 
+.h3 {
+    height: 40vh;
+}
+
 .mw1 {
     width: 32rem;
 }
