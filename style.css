@@ -130,6 +130,10 @@ body {
     text-underline-position: under;
 }
 
+.taj {
+    text-align: justify;
+}
+
 /* line spacing */
 
 .lh {
@@ -440,6 +444,10 @@ li {
 
 ul {
     list-style: disc;
+}
+
+ol {
+    text-align: justify;
 }
 
 .sub li {
