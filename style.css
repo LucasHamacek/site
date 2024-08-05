@@ -433,7 +433,7 @@ details[open] summary:after {
     flex-direction: column;
     justify-content: start;
     border-radius: 1px;
-    gap: 0.5rem;
+    gap: 1rem;
     border: solid 1px rgb(177, 177, 177);
     padding: 2rem;
     background-color: var(--color5);
