@@ -172,6 +172,10 @@ button {
     display: flex;
 }
 
+.dms {
+    display: none;
+}
+
 .fd {
     flex-direction: column;
 }
@@ -640,7 +644,9 @@ dialog {
 }
 
 @media only screen and (min-width: 768px) {
-    
+    .dms {
+        display: flex;
+    }
 }
 
 @media only screen and (min-width: 992px) {
