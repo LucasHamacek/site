@@ -17,14 +17,13 @@
 </head>
 
 <body>
-    <header class="df fd ai pd1 bgc2">
-        <p class="fs5 fw300 fc5"><a class="link"
-                href="index.html#planos">Experimente
+    <article class="df fd ai pd1 bgc2">
+        <p class="fs5 fw300 fc5"><a class="link" href="index.html#planos">Experimente
                 a planilha por 30 dias grátis</a></p>
-        <p class="fs5 fw300 fc5">Após isso, será cobrado apenas R$ 9,90/mês</p>
+        <p class="fs5 fw300 fc5">Desconto de 50% no plano anual</p>
         <p class="fs5 fw300 fc5">Cancele a qualquer momento</p>
-    </header>
-    <header class="bgc7">
+    </article>
+    <nav class="bgc7">
         <div class="df pd9 ac jcsb mg1">
             <a class="df ai" href="index.html">
                 <svg width="22" height="34" viewBox="0 0 22 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,15 +42,17 @@
                 </svg>
             </a>
             <div class="df gp2">
-                <a href="#newsletter" name="MP-payButton" class='btn5'>Verssão gratuita</a>
+                <div class="dms">
+                    <a href="#newsletter" name="MP-payButton" class='btn5'>Verssão gratuita</a>
+                </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" width="32">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                 </svg>
             </div>
         </div>
-    </header>
-    <section class="df fd pd2 gp3 ai jc h3 bgc7">
+    </nav>
+    <header class="df fd pd2 gp3 ai jc h3 bgc7">
         <div class="df fd mw3 gp1 ai jc">
             <div>
                 <p class="ta fs5 fw500">CONTATO</p>
@@ -67,39 +68,45 @@
                     máximo os recursos da planilha.</p>
             </div>
         </div>
-    </section>
-    <section id="newsletter" class="df fw gp3 pd2 jc bgc4">
-        <div class="w4">
-            <h2 class="ff1 fs2">Precisa de ajuda?</h2>
-            <p class="fs3">Fale conosco através do e-mail: <span class="fw600">fatiainvest@gmail.com</span></p>
-        </div>
-        <div class="df w4 fd gp1">
-            <div class="df jcsb">
-                <h2 class="ff1 fs2 lh">Newsletter</h2>
+    </header>
+    <main>
+        <section id="newsletter" class="df fw gp3 pd2 jc bgc4">
+            <div class="w4">
+                <h2 class="ff1 fs2">Precisa de ajuda?</h2>
+                <p class="fs3">Fale conosco através do e-mail: <span class="fw600">fatiainvest@gmail.com</span></p>
             </div>
-            <div class="df fd gp2">
-                <div>
-                    <p class="fs3">Inscreva-se em nossa newsletter e receba acesso à versão gratuita da planilha*.</p>
+            <div class="df w4 fd gp1">
+                <div class="df jcsb">
+                    <h2 class="ff1 fs2 lh">Newsletter</h2>
                 </div>
-                <form class="df fd gp1" action="https://formpost.app/fatiainvest@gmail.com" method="post">
-                    <div class="df gp1">
-                        <input class="w2 h1 pl tar" type="email" name="email" placeholder="Digite seu e-mail"
-                            required>
-                        <button class="h1 btn3" type="submit">Inscrever</button>
+                <div class="df fd gp2">
+                    <div>
+                        <p class="fs3">Inscreva-se em nossa newsletter e receba acesso à versão gratuita da planilha*.
+                        </p>
                     </div>
-                    <div class="df gp1">
-                        <input type="checkbox" name="" id="" required> <span class="fs5">Concordo que os dados pessoais
-                            fornecidos acima serão utilizados para envio de conteúdo informativo e publicitário sobre
-                            produtos, serviços e assuntos gerais, conforme a <a class="td1" target="_blank"
-                                href="politicadeprivacidade.html">Política de privacidade</a> e <a class="td1"
-                                target="_blank" href="termosdeuso.html">Termos de uso.</a></span>
-                    </div>
-                    <input type="hidden" name="fp_subject" value="Nova Inscrição">
-                    <input type="hidden" name="fp_redirect" value="https://fatiainvest.github.io/site/inscricao.html">
-                </form>
+                    <form class="df fd gp1" action="https://formpost.app/fatiainvest@gmail.com" method="post">
+                        <div class="df gp1">
+                            <input class="w2 h1 pl tar" type="email" name="email" placeholder="Digite seu e-mail"
+                                required>
+                            <button class="h1 btn3" type="submit">Inscrever</button>
+                        </div>
+                        <div class="df gp1">
+                            <input type="checkbox" name="" id="" required> <span class="fs5">Concordo que os dados
+                                pessoais
+                                fornecidos acima serão utilizados para envio de conteúdo informativo e publicitário
+                                sobre
+                                produtos, serviços e assuntos gerais, conforme a <a class="td1" target="_blank"
+                                    href="politicadeprivacidade.html">Política de privacidade</a> e <a class="td1"
+                                    target="_blank" href="termosdeuso.html">Termos de uso.</a></span>
+                        </div>
+                        <input type="hidden" name="fp_subject" value="Nova Inscrição">
+                        <input type="hidden" name="fp_redirect"
+                            value="https://fatiainvest.github.io/site/inscricao.html">
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="bgc5">
         <div class="df fd mw3 mg1 jc pd2 gp1">
             <h4 class="fs6 fw400">*Isenção de responsabilidade</h4>
@@ -145,7 +152,6 @@
                             href="politicadeprivacidade.html">Política de privacidade</a> | <a class="td1 fw600"
                             href="contato.html">Contato</a></p>
                 </div>
-
             </div>
         </div>
     </footer>
