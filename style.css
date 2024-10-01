@@ -28,6 +28,23 @@ html {
     --color12: #a7a7a7;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color1: #fab200;
+        --color2: #02283c;
+        --color3: #070707;
+        --color4: #f2f2f7;
+        --color5: #ffffff;
+        --color6: #111111;
+        --color7: #f07f00;
+        --color8: #86c6e4;
+        --color9: #07070740;
+        --color10: #201717;
+        --color11: #7a7a7a;
+        --color12: #a7a7a7;
+    }    
+}
+
 /* global configuration */
 
 * {
