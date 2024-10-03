@@ -21,7 +21,7 @@ html {
     --color5: #ffffff;
     --color6: #111111;
     --color7: #fb8500;
-    --color8: #8ecae6;
+    --color8: #8ABEFA;
     --color9: #07070740;
     --color10: #201717;
     --color11: #7a7a7a;
@@ -241,6 +241,10 @@ button {
     text-align: left;
 }
 
+.aie {
+    align-items: flex-end;
+}
+
 /* spacing */
 
 .gp1 {
@@ -432,20 +436,22 @@ button {
 }
 
 .btn1 {
+    margin-bottom: .25rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 0.75rem;
-    background-color: var(--color1);
     padding: .625rem 1.25rem;
     border: solid 1px var(--color10);
     border-radius: 2rem;
     cursor: pointer;
+    box-shadow: 0rem .25rem var(--color10)
 }
 
 .btn1:hover {
-    transform: translateY(-.25rem);
+    transform: translateY(.25rem);
     transition: 250ms;
-    box-shadow: 0rem .25rem var(--color10)
+    box-shadow: none;
 }
 
 .btn2 {
@@ -456,34 +462,37 @@ button {
 }
 
 .btn3 {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 0.75rem;
-    background-color: var(--color1);
     padding: .625rem 1.25rem;
     border: solid 1px var(--color10);
     border-radius: 2rem;
     cursor: pointer;
-}
-
-.btn3:hover {
-    transform: translateY(-.25rem);
-    transition: 250ms;
     box-shadow: 0rem .25rem var(--color10);
 }
 
+.btn3:hover {
+    transform: translateY(.25rem);
+    transition: 250ms;
+    box-shadow: none;
+}
+
 .btn4 {
+    color: var(--color5);
     display: flex;
     align-items: center;
     font-size: 0.75rem;
-    background-color: var(--color1);
     padding: .625rem 1.25rem;
-    border: none;
+    border: solid 1px var(--color5);
     border-radius: 2rem;
     cursor: pointer;
 }
 
 .btn4:hover {
+    color: var(--color6);
     background-color: var(--color4);
     transition: 250ms;
 }
