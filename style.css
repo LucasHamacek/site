@@ -19,7 +19,7 @@ html {
     --color3: #070707;
     --color4: #F2F2F7;
     --color5: #ffffff;
-    --color6: #111111;
+    --color6: #111112;
     --color7: #fb8500;
     --color8: #8ABEFA;
     --color9: #07070740;
@@ -68,7 +68,6 @@ button {
     border-radius: .50rem;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, .6);
     box-shadow: 0px 3px 8px 0px rgb(0, 0, 0, .15);
-    border: solid 1px rgb(177, 177, 177);
 }
 
 .show {
@@ -341,6 +340,10 @@ button {
     background-color: var(--color5);
 }
 
+.bgc6 {
+    background-color: var(--color6);
+}
+
 .bgc7 {
     background-color: var(--color7);
 }
@@ -436,22 +439,21 @@ button {
 }
 
 .btn1 {
-    margin-bottom: .25rem;
+    color: var(--color2);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
     padding: .625rem 1.25rem;
-    border: solid 1px var(--color10);
+    border: solid 1px var(--color2);
     border-radius: 2rem;
     cursor: pointer;
-    box-shadow: 0rem .25rem var(--color10)
 }
 
 .btn1:hover {
-    transform: translateY(.25rem);
+    color: var(--color5);
+    background-color: var(--color2);
     transition: 250ms;
-    box-shadow: none;
 }
 
 .btn2 {
@@ -462,22 +464,16 @@ button {
 }
 
 .btn3 {
+    color: var(--color5);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
     padding: .625rem 1.25rem;
-    border: solid 1px var(--color10);
+    background-color: var(--color2);
     border-radius: 2rem;
     cursor: pointer;
-    box-shadow: 0rem .25rem var(--color10);
-}
-
-.btn3:hover {
-    transform: translateY(.25rem);
-    transition: 250ms;
-    box-shadow: none;
 }
 
 .btn4 {
@@ -493,25 +489,20 @@ button {
 
 .btn4:hover {
     color: var(--color6);
-    background-color: var(--color4);
+    background-color: var(--color5);
     transition: 250ms;
 }
 
 .btn5 {
+    color: var(--color5);
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 0.75rem;
-    background-color: var(--color1);
     padding: .625rem 1.25rem;
-    border: solid 1px var(--color10);
+    background-color: var(--color2);
     border-radius: 2rem;
     cursor: pointer;
-}
-
-.btn5:hover {
-    transform: translateY(-.25rem);
-    transition: 250ms;
-    box-shadow: 0rem .25rem var(--color10)
 }
 
 .btn6 {
@@ -555,6 +546,16 @@ details[open] summary:after {
 }
 
 .link:hover {
+    text-decoration: none;
+}
+
+.link-1 {
+    color: var(--color6);
+    text-decoration: underline dotted;
+    text-underline-position: under;
+}
+
+.link-1:hover {
     text-decoration: none;
 }
 
@@ -640,8 +641,7 @@ dialog {
     gap: 1rem;
     padding: 1rem;
     width: 100%;
-    background-color: var(--color10);
-    border-top: solid 1px var(--color6);
+    background-color: var(--color6);
 }
 
 .ck.show {
@@ -677,7 +677,7 @@ dialog {
 }
 
 .bb {
-    border-bottom: solid 1px var(--color4);
+    border-bottom: solid 1px var(--color5);
 }
 
 /* media screen */
@@ -705,8 +705,7 @@ dialog {
         gap: 1rem;
         padding: 1rem;
         width: 100%;
-        background-color: var(--color10);
-        border-top: solid 1px var(--color6);
+        background-color: var(--color6);
     }
     
     .ck.show {
